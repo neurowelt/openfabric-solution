@@ -42,7 +42,8 @@ curl -L https://www.dropbox.com/s/33pu6xma8wwqz6c/entity_base.pkl > ./src/data/e
 
 # Install packages
 echo "Installing Python packages..."
-pip install -r requirements.txt
+conda activate chatbot
+pip install -r ./src/requirements.txt
 
 # Solves spacy problem with finding model
 echo "Downloading spacy model..."
